@@ -34,7 +34,8 @@ img[id='logo'] {
     background-color: black;
     width: 100%;
     box-sizing: border-box; /* Add this line to include padding in width calculation */
-    box-shadow: none 5 whitesmoke;
+    box-shadow: none 5px whitesmoke;
+    padding-top: 5px;
     padding-left: 10px; /* Set padding to 10px to add space inside the textarea */
     padding-right: 10px;
     color: white;
