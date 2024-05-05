@@ -1,7 +1,48 @@
-html {
+/* 
+ * CSS styles for the HTML document.
+ * The background color of the html element is set to black.
+ */
+ html {
     background-color: black;
 }
+
+/* 
+ * CSS styles for the body element.
+ * The text color is set to white and the font family is set to 'Determination Mono Web'.
+ */
 body {
     color: white ;
     font-family: 'Determination Mono Web';
+    font-size: x-large;
+}
+
+/* 
+ * CSS styles for the image element with the id 'logo'.
+ * A margin is added below the image to create some space.
+ */
+img[id='logo'] {
+    margin-bottom: 25px; /* Add some space below the image */
+}
+/* 
+ * CSS styles for the textarea element.
+ * The outline is set to 4px solid white, background color to black, width to 100%, 
+ * color to white, font family to 'Determination Mono Web', display to block, and margin to 10px auto.
+ * Text is aligned to the left, wrapped to the next line at whole words, and starts at the top of the textarea.
+ */
+ textarea[id='dialogueInput'] {
+    outline: 4px solid white;
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box; /* Add this line to include padding in width calculation */
+    box-shadow: inset whitesmoke;
+    padding-left: 10px; /* Set padding to 10px to add space inside the textarea */
+    padding-right: 10px;
+    color: white;
+    font-family: 'Determination Mono Web';
+    display: block;
+    margin: 10px auto;
+    text-align: left;
+    text-wrap: normal;
+    overflow: hidden; /* Add this line to hide the scrollbar */
+    resize: none; /* Add this line to disable resizing */
 }
