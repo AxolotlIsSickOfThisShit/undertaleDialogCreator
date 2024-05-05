@@ -6,17 +6,26 @@
 ***
 ![How do You Use it?](/Assets/how.png)
 
-As of now, the tool is unfinished, but once it is complete enough to release, a guide will be implemented. In the meantime, here are my findings for the inner workings of the UNDERTALE text system.
+As of now, the tool is unfinished. 
+
+**In the meantime, here are my findings for the inner workings of the UNDERTALE text system.**
 
 ``` none
-G in brackets is Gold Amount
-I in brackets is current ITEM (used when dropping items)
-1-9 in brackets refer to arguments 1-9 (these are temporary variables for specific dialogue or text, such as how much gold you gain or what armor Papyrus tells Undyne you were wearing)
+G in square brackets is Gold Amount
+I in square brackets is current ITEM (used when dropping items)
+1-9 in square brackets refer to arguments 1-9 (these are temporary variables for specific dialogue or text, such as how much gold you gain or what armor Papyrus tells Undyne you were wearing)
 \(capital letter) changes the color of text to the right of it to that color (\X changes it back to white)
-^(number) changes the text speed
-& begins a new line in textbox and battle dialogue
-# begins a new line in the intro cutscene and naming screen text
+^(number) creates a text delay, and also modifies how long the intro cutscene frame stays after the dialogue is over. (only after the closing backslash)
+& begins a new line in textbox, intro cutscene, and battle dialogue
+# begins a new line in naming screen text
+You must put a backslash (\) immediately before anything that is in square brackets.
+\E[number], when used in dialogue where the character's face is in the textbox, changes that character's expression. It also has an unknown effect on the intro cutscene, but only after the closing backslash.
+a forwardslash ends dialogue that is not in the intro cutscene or on the naming screen. In the intro cutscene, a backslash marks the end of dialogue, but there is still things that go after the backslash.
+a % symbol ends the dialogue only on the intro cutscene, and only after the "\E[number 1-9] ^[number 1-9]" sequence.
 ```
+**Here is the current guide:**
+> Typing "(Gold Amount)" will input how much G the player has.
+       Typing "(Item)" when creating text relating to dropping an item will input the name of whatever item is being dropped. Typing "([number 1-9])" will input data specific to an argument. (This changes based on the context, it is basically a variable that changes based on what textbox is being shown.) Typing "([color])" (red, yellow, green, blue, purple, orange, teal, white, default) will change the text after it to that color. (Text usually defaults to white.) Typing "(delay [number])" will delay the text. Just press enter to start a new line.
 **NOTE: Upon downloading the release, the user may be required to download and install a font file. If this is required, a guide will be supplied for this as well.**
 ***
 ![Do you want to help with this project?](/Assets/help.png)
