@@ -1,4 +1,4 @@
-# UNDERTALE Dialogue Creator
+![UNDERTALE Dialogue Creator!](/txt-logo.png)
 ## What is it?
 **UNDERTALE Dialogue Creator** is a tool for modding **UNDERTALE**. It takes a string as input, and converts it into a string that you can copy and paste into the **data.win** file for UNDERTALE using [**UNDERTALE Modding Tool**](https://github.com/UnderminersTeam/UndertaleModTool). The string will then work as actual dialogue in UNDERTALE, without you having to edit the string afterwards.
 
