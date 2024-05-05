@@ -21,7 +21,8 @@ I in square brackets is current ITEM (used when dropping items)
 You must put a backslash (\) immediately before anything that is in square brackets.
 \E[number], when used in dialogue where the character's face is in the textbox, changes that character's expression. It also has an unknown effect on the intro cutscene, but only after the closing backslash.
 a forwardslash ends dialogue that is not in the intro cutscene or on the naming screen. In the intro cutscene, a backslash marks the end of dialogue, but there is still things that go after the backslash.
-a % symbol ends the dialogue only on the intro cutscene, and only after the "\E[number 1-9] ^[number 1-9]" sequence.
+a % symbol ends the dialogue only on the intro cutscene, and only after the "\E[number 1-9] ^[number 1-9]" sequence. it also seems to do something if it is after the forwardslash and is in dialogue with parentheses, but only when there's two %s.
+C right after the forwardslash at the end will make the dialogue a choice.
 ```
 **Here is the current guide:**
 > Typing "(Gold Amount)" will input how much G the player has.
