@@ -8,11 +8,11 @@
 
 /* 
  * CSS styles for the body element.
- * The text color is set to white and the font family is set to 'Determination Mono Web'.
+ * The text color is set to white and the font family is set to 'Determination Sans Web'.
  */
 body {
     color: white ;
-    font-family: 'Determination Mono Web';
+    font-family: 'Determination Mono Web Regular';
     font-size: x-large;
 }
 
@@ -22,11 +22,12 @@ body {
  */
 img[id='logo'] {
     margin-bottom: 25px; /* Add some space below the image */
+    margin-top: 25px; /* Add some space above the image */
 }
 /* 
  * CSS styles for the textarea element.
  * The outline is set to 4px solid white, background color to black, width to 100%, 
- * color to white, font family to 'Determination Mono Web', display to block, and margin to 10px auto.
+ * color to white, font family to 'Determination Sans Web', display to block, and margin to 10px auto.
  * Text is aligned to the left, wrapped to the next line at whole words, and starts at the top of the textarea.
  */
  textarea[id='dialogueInput'] {
@@ -46,4 +47,10 @@ img[id='logo'] {
     text-wrap: normal;
     overflow: hidden; /* Add this line to hide the scrollbar */
     resize: none; /* Add this line to disable resizing */
+}
+b {
+    font-size: medium;
+}
+label {
+    font-family: 'Determination Mono Web';
 }
