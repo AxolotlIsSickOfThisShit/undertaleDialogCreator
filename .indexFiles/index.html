@@ -7,16 +7,40 @@
 </head>
 <body>
     <img src="txt-logo.png" id='logo' alt="UNDERTALE Dialogue Creator! logo">
-    <b>Typing "(Gold Amount)" will input how much G the player has.
+    <h1>UNDERTALE Working Text Box Generator</h1>
+    <b>Typing "(Name)" will input the name chosen by the player at the start of the game.
+       <br></br>
+       Typing "(Gold Amount)" will input how much G the player has.
+       <br></br>
        Typing "(Item)" when creating text relating to dropping an item will input the name of whatever item is being dropped.
+       <br></br>
        Typing "([number 1-9])" will input data specific to an argument. (This changes based on the context, it is basically a variable that changes based on what textbox is being shown.)
+       <br></br>
        Typing "([color])" (red, yellow, green, blue, purple, orange, teal, white, default) will change the text after it to that color. (Text usually defaults to white.)
+       <br></br>
        Typing "(delay [number])" will delay the text.
+       <br></br>
        Just press enter to start a new line.
+       <br></br>
+       Press the "Add Face" button to bring up a slider to choose the expression of the character in the box, if there is one.
+       <br></br>
+       There will be a forward slash at the end of the output.
     </b>
+    <b style=font-size:40px;> This is normal! Do not delete this!</b>
+    <br></br>
+    <h2>No tags are case sensitive!</h2>
+    <b>Also, most dialogue boxes in UNDERTALE have an asterisk in front of each new line of text. Keep that in mind!</b>
     <br></br>
     <label for="dialogueInput">Enter your base string:</label>
     <textarea id="dialogueInput" name="baseString"></textarea>
+    <br></br>
+    <label for="output">Copy and paste this string to insert your working dialogue: </label>
+    <textarea id="output" name="output"></textarea>
+    <button id="characterButton">Toggle Face</button>
+    <div id="characterSliderContainer" style="display: none;">
+        <label for="characterSlider">Expression Number:</label>
+        <input type="range" id="characterSlider" name="characterSlider" min="0" max="9">
+    </div>
     <script src="script.js"></script>
     <br></br>
     

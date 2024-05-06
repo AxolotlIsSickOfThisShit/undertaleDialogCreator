@@ -30,7 +30,7 @@ img[id='logo'] {
  * color to white, font family to 'Determination Sans Web', display to block, and margin to 10px auto.
  * Text is aligned to the left, wrapped to the next line at whole words, and starts at the top of the textarea.
  */
- textarea[id='dialogueInput'] {
+ textarea {
     outline: 4px solid white;
     background-color: black;
     width: 100%;
@@ -49,8 +49,35 @@ img[id='logo'] {
     resize: none; /* Add this line to disable resizing */
 }
 b {
-    font-size: medium;
+    font-size: large;
 }
 label {
     font-family: 'Determination Mono Web';
+}
+h1,h2{
+    font-family: 'Determination Mono Web';
+    text-shadow: 2px 2px 2px yellowgreen;
+    letter-spacing: 3px;
+    color: gold;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+h2{
+    font-size: xx-large;
+    text-align: left;
+}
+button {
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    font-family: 'Determination Mono Web';
+    font-size: large;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 5px solid yellow;
 }
