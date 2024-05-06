@@ -6,7 +6,8 @@
 ***
 ![How do You Use it?](/Assets/how.png)
 
-As of now, the tool is unfinished. 
+### As of now, the tool is unfinished. 
+Currently, you need to download the latest release and install the included font file. After that, you can double-click the shortcut included in the folder, and voila! You have access! As of the moment, it only supports text boxes.
 
 **In the meantime, here are my findings for the inner workings of the UNDERTALE text system.**
 
@@ -25,8 +26,25 @@ a % symbol ends the dialogue only on the intro cutscene, and only after the "\E[
 C right after the forwardslash at the end will make the dialogue a choice.
 ```
 **Here is the current guide:**
+> ## UNDERTALE Working Text Box Generator
+> Typing "(Name)" will input the name chosen by the player at the start of the game.
+
 > Typing "(Gold Amount)" will input how much G the player has.
-       Typing "(Item)" when creating text relating to dropping an item will input the name of whatever item is being dropped. Typing "([number 1-9])" will input data specific to an argument. (This changes based on the context, it is basically a variable that changes based on what textbox is being shown.) Typing "([color])" (red, yellow, green, blue, purple, orange, teal, white, default) will change the text after it to that color. (Text usually defaults to white.) Typing "(delay [number])" will delay the text. Just press enter to start a new line.
+
+> Typing "(Item)" when creating text relating to dropping an item will input the name of whatever item is being dropped.
+
+> Typing "([number 1-9])" will input data specific to an argument. (This changes based on the context, it is basically a variable that changes based on what textbox is being shown.)
+
+> Typing "([color])" (red, yellow, green, blue, purple, orange, teal, white, default) will change the text after it to that color. (Text usually defaults to white.)
+
+> Typing "(delay [number])" will delay the text.
+
+> Just press enter to start a new line.
+
+> Press the "Add Face" button to bring up a slider to choose the expression of the character in the box, if there is one.
+
+> There will be a forward slash at the end of the output. **This is normal! Do not delete this!**
+### No tags are case sensitive!
 **NOTE: Upon downloading the release, the user may be required to download and install a font file. If this is required, a guide will be supplied for this as well.**
 ***
 ![Do you want to help with this project?](/Assets/help.png)
