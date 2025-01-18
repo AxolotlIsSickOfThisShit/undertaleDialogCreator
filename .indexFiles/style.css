@@ -11,6 +11,7 @@
  * The text color is set to white and the font family is set to 'Determination Sans Web'.
  */
 body {
+    background-color: black;
     color: white ;
     font-family: 'Determination Mono Web Regular';
     font-size: x-large;
